@@ -119,9 +119,11 @@ configure name of the job >> edit the script
 - cat /etc/passwd
 - jenkins:x:109:115:Jenkins,,,:/var/lib/jenkins:/bin/ba(jenkins user location)
 - log in root user (sudo -i )
-- vi sudo 
+- visudo 
 - jenkins ALL=(ALL:ALL) NOPASSWD:ALL
 - then again build which can be run on sudo user it will be run
+
+
 - Install something on jeniks user
 ----------------------------------
 -  sudo -i 
@@ -351,7 +353,7 @@ Configuration of Node2 : Gol
 - sudo vi /etc/ssh/sshd_config >>> pw aus >>>yes
 - sudo systemctl restart sshd
 - sudo apt update
-- sudo apt install openjdk-8-jdk openjdk-17-jdk -y
+- sudo apt install openjdk-8-jdk openjdk-17-jdk -y  
 -  java -version ( openjdk version "17.0.7" 2023-04-18 )
 -  where is java
 -  find java path (/usr/lib/jvm)
